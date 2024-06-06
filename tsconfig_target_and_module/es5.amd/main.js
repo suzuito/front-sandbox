@@ -43,4 +43,7 @@ define(["require", "exports", "./hello"], function (require, exports, hello_1) {
         };
         return B;
     }(A));
+    var allowFunc = function () {
+        console.log("This is allow func");
+    };
 });

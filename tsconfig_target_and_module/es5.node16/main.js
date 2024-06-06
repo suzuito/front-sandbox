@@ -43,3 +43,6 @@ var B = /** @class */ (function (_super) {
     };
     return B;
 }(A));
+var allowFunc = function () {
+    console.log("This is allow func");
+};

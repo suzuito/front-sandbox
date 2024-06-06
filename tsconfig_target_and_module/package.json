@@ -5,5 +5,8 @@
     },
     "devDependencies": {
         "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1"
     }
 }

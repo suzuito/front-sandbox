@@ -25,3 +25,6 @@ class B extends A {
         return super.bar();
     }
 }
+const allowFunc = () => {
+    console.log("This is allow func");
+};

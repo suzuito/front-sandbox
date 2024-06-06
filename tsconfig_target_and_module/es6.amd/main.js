@@ -23,4 +23,7 @@ define(["require", "exports", "./hello"], function (require, exports, hello_1) {
             return super.bar();
         }
     }
+    const allowFunc = () => {
+        console.log("This is allow func");
+    };
 });
