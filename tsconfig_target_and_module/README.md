@@ -39,3 +39,5 @@ Node.js v20.10.0
 ```
 
 理由は、TypeScriptにおいてはファイル拡張子を省略可能だが、Node.jsとブラウザでサポートされているESMにおいては拡張子を省略不可能なため。[参考](https://qiita.com/masato_makino/items/8451bf4e62ad27823af1#import%E3%81%A8%E6%8B%A1%E5%BC%B5%E5%AD%90)
+
+Node.jsで実行可能なjsを出力するためにはモジュール形式をcommonjsにする。ブラウザで実行可能なjsを出力するためには、tscではなく、バンドラー(webpackやらviteやら)を使用する方が良さそう。
