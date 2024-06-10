@@ -11,5 +11,5 @@ npm ci
 npx tsc
 
 # 実行
-node main.js
+node tscout/main.js
 ```
