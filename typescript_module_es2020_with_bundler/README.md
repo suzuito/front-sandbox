@@ -10,7 +10,7 @@ npm ci
 npx tsc
 
 # 当然、下記は実行できない。エラーとなる。
-node main.js
+node tscout/main.js
 
 # バンドラー(webpack)によって中間処理させ、Node.jsで実行できるようにしてみる。
 # (注意)

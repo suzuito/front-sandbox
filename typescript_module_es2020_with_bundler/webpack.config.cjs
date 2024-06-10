@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-    entry: "./main.js",
+    entry: "./tscout/main.js",
     output: {
         filename: "./bundle.js",
         path: path.join(__dirname, "dist"),
