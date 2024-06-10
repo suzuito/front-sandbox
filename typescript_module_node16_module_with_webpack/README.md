@@ -1,7 +1,14 @@
-# module=node16,package.jsonのtypeがmodule,webpackでバンドリング
+# module=node16,.mts,.ctsファイルのコンパイル,webpackでバンドリング
+
+本コードはTypeScriptとWebpackの勉強用なため、[ts-loader](https://github.com/TypeStrong/ts-loader)を使用していない。
+(TypeScriptをWebpackで扱いたいのであればts-loaderを使った方が良いです)
 
 TypeScriptはコンパイル後のJavaScriptがNode.js v16以上で実行されることを想定している。
-package.jsonのtypeがmoduleなため、TypeScriptはNode.jsのES Moduleとして動作するJavaScriptを出力する。
+package.jsonのtypeではなく、TypeScriptのファイル拡張子によって、TypeScriptがNode.jsのES Module、CommonJS Moduleのどちらとして動作するかを指定できる。
+
+TypeScriptは、.mtsという拡張子を持つソースコードをES ModuleのJavaScriptとして出力し、出力後のJavaScriptのソースコードの拡張子を.mjsとする。
+
+TypeScriptは、.ctsという拡張子を持つソースコードをCommonJS ModuleのJavaScriptとして出力、出力後のJavaScriptのソースコードの拡張子を.cjsとする。
 
 ```bash
 # 環境構築
@@ -11,11 +18,18 @@ npm ci
 npx tsc
 
 # 直接実行できる
-node main.js
+node main.cjs
+node main.mjs
+```
 
+JavaScriptがCommonJS Module形式である場合[tree shaking](https://developer.mozilla.org/ja/docs/Glossary/Tree_shaking)されないため、ES Module形式にすること。
+dist/bundle_esm.jsはtree shakingされているが、dist/bundle_commonjs.jsはされていない。
+
+```bash
 # バンドリングする
 npx webpack
 
 # バンドルされたjsを実行する
-node dist/bundle.js
+node dist/bundle_commonjs.js
+node dist/bundle_esm.js
 ```
