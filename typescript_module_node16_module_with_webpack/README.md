@@ -18,8 +18,8 @@ npm ci
 npx tsc
 
 # 直接実行できる
-node main.cjs
-node main.mjs
+node tscout/main.cjs
+node tscout/main.mjs
 ```
 
 JavaScriptがCommonJS Module形式である場合[tree shaking](https://developer.mozilla.org/ja/docs/Glossary/Tree_shaking)されないため、ES Module形式にすること。
