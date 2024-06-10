@@ -1,4 +1,4 @@
-# module=node16,package.jsonのtypeがmodule
+# module=node16,.mts,.ctsファイルのコンパイル
 
 TypeScriptはコンパイル後のJavaScriptがNode.js v16以上で実行されることを想定している。
 package.jsonのtypeではなく、TypeScriptのファイル拡張子によって、TypeScriptがNode.jsのES Module、CommonJS Moduleのどちらとして動作するかを指定できる。
