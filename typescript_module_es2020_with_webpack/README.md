@@ -1,4 +1,4 @@
-# module=node16,package.jsonのtypeがmodule
+# module=es2020,webpack
 
 TypeScriptは、コンパイル後のJavaScriptは、ES Moduleを扱うことのできる何らかの中間変換(バンドル、WebサーバーからJavaScriptファイルの配布など)を介して、何らかの実行環境(ブラウザなど)で実行されることを想定している。
 
