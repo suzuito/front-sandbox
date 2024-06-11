@@ -1,0 +1,1 @@
+(()=>{"use strict";var e={353:(e,o)=>{Object.defineProperty(o,"__esModule",{value:!0}),o.unused=o.sayHoge=void 0,o.sayHoge=function(){console.log("hoge")},o.unused="This is unused string"}},o={};(0,function s(r){var t=o[r];if(void 0!==t)return t.exports;var u=o[r]={exports:{}};return e[r](u,u.exports,s),u.exports}(353).sayHoge)()})();
