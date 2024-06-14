@@ -3,14 +3,15 @@
         // ソースマップを有効化
         "sourceMap": true,
         // TSはECMAScript 5に変換
-        "target": "ES5",
+        "target": "es5",
         // TSのモジュールはES Modulesとして出力
-        "module": "ES2015",
+        "module": "es2015",
         // 厳密モードとして設定
         "strict": true,
         // JSXの書式を有効に設定
         "jsx": "react-jsx",
-        "moduleResolution": "node",
+        // バンドラー向け
+        "moduleResolution": "bundler",
         "lib": [
             "ES2023",
             "DOM"

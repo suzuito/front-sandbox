@@ -1,5 +1,7 @@
 # React x TypeScript x Webpack 最小構成
 
+Reactお勉強用
+
 ```bash
 npm ci
 ```
