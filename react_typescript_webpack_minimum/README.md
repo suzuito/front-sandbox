@@ -13,3 +13,9 @@ npm ci
 ```bash
 npx webpack serve --open --mode=development
 ```
+
+eslintを実行する
+
+```bash
+npx eslint src/
+```
